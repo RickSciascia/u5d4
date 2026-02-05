@@ -64,12 +64,14 @@ public class Runner implements CommandLineRunner {
 
 
 //            semplice ed intuitivo:
-            ArrayList<Topping> listaIngredientiMarg = new ArrayList<>(Arrays.asList(
-                    (Topping)pomodoroFromDb,(Topping)mozzarellaFromDb,(Topping)funghiFromDb,(Topping)salsicciaFromDb));
-
-            Pizza pizzaMargherita = new Pizza("Pizza Tutto",800,5,listaIngredientiMarg);
+//            ArrayList<Topping> listaIngredientiMarg = new ArrayList<>(Arrays.asList(
+//                    (Topping)pomodoroFromDb,(Topping)mozzarellaFromDb,(Topping)funghiFromDb,(Topping)salsicciaFromDb));
+//
+//            Pizza pizzaMargherita = new Pizza("Pizza Tutto",800,5,listaIngredientiMarg);
 //            menuService.saveElementoMenu(pizzaMargherita);
-            menuService.findAndUpdateById(8,pizzaMargherita);
+//            menuService.findAndUpdateById(8,pizzaMargherita);
+//            menuService.trovaNelMenuConNome("Pizza Tutto").forEach(System.out::println);
+//            menuService.trovaNelMenuConPrezzo(1.5).forEach(System.out::println);
 
 //            System.out.println(pomodoroFromDb);
 //            System.out.println("Ciao");

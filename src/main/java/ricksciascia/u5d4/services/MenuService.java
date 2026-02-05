@@ -44,4 +44,11 @@ public class MenuService {
         Menu elementoTrovato = this.findById(id);
         menuRepo.deleteById(elementoTrovato.getId());
     }
+
+    public List<Menu> trovaNelMenuConNome(String nome) {
+        return menuRepo.findByNome(nome);
+    }
+    public List<Menu> trovaNelMenuConPrezzo(double prezzo) {
+        return menuRepo.findByPrezzo(prezzo);
+    }
 }
