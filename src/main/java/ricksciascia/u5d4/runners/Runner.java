@@ -70,7 +70,7 @@ public class Runner implements CommandLineRunner {
 //            Pizza pizzaMargherita = new Pizza("Pizza Tutto",800,5,listaIngredientiMarg);
 //            menuService.saveElementoMenu(pizzaMargherita);
 //            menuService.findAndUpdateById(8,pizzaMargherita);
-//            menuService.trovaNelMenuConNome("Pizza Tutto").forEach(System.out::println);
+            menuService.trovaNelMenuConNome("Pizza Tutto").forEach(System.out::println);
 //            menuService.trovaNelMenuConPrezzo(1.5).forEach(System.out::println);
 
 //            System.out.println(pomodoroFromDb);

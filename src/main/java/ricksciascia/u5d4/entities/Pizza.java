@@ -1,9 +1,6 @@
 package ricksciascia.u5d4.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.*;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
@@ -11,7 +8,7 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 public class Pizza extends Menu {
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER) // chiede ogni volta che si legge da DB di leggere anche i toppings
     @JoinTable(name = "pizzas_toppings",
             joinColumns = @JoinColumn(name = "pizza_id", nullable = false),
             inverseJoinColumns = @JoinColumn(name = "topping_id",nullable = false))
