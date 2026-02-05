@@ -1,14 +1,12 @@
 package ricksciascia.u5d4.entities;
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
 @Table(name = "elementi_menu")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Menu {
